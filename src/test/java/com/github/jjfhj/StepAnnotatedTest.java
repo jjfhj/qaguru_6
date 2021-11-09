@@ -2,7 +2,9 @@ package com.github.jjfhj;
 
 import com.codeborne.selenide.Configuration;
 import com.github.jjfhj.steps.WebSteps;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class StepAnnotatedTest {
@@ -16,6 +18,13 @@ public class StepAnnotatedTest {
     private WebSteps steps = new WebSteps();
 
     @Test
+    @Owner("Карина Гордиенко (jjfhj)")
+    @Feature("Страница репозитория")
+    @Story("Элементы на странице репозитория")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Третий вариант теста. Шаги с аннотацией @Step")
+    @Link(name = "GitHub", url = "https://github.com")
+
     public void checkingTheIssueNameInTheRepository() {
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);

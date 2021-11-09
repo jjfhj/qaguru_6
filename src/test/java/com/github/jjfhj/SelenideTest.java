@@ -24,7 +24,7 @@ public class SelenideTest {
     @Feature("Страница репозитория")
     @Story("Элементы на странице репозитория")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Первый вариант теста. Selenide (с Listener)")
+    @DisplayName("Первый вариант теста. Selenide с Listener")
     @Link(name = "GitHub", url = "https://github.com")
 
     public void checkingTheIssueNameInTheRepository() {

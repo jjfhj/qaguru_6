@@ -15,12 +15,12 @@ public class WebSteps {
 
     @Step("Найти репозиторий {repository}")
     public void searchForRepository(String repository) {
-        $("[name=q]").setValue("jjfhj/qaguru_6").submit();
+        $("[name=q]").setValue(repository).submit();
     }
 
     @Step("Перейти в найденный репозиторий {repository}")
     public void goToRepository(String repository) {
-        $(linkText("jjfhj/qaguru_6")).click();
+        $(linkText(repository)).click();
     }
 
     @Step("Найти название Issues в репозитории {repository}")

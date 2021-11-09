@@ -23,8 +23,8 @@ public class WebSteps {
         $(linkText(repository)).click();
     }
 
-    @Step("Найти название Issues в репозитории {repository}")
-    public void findIssuesTitle(String repository) {
+    @Step("Найти название Issues в репозитории jjfhj/qaguru_6")
+    public void findIssuesTitle() {
         $("#issues-tab").shouldHave(text("Issues"));
     }
 }

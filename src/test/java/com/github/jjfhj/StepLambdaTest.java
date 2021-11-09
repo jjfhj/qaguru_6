@@ -25,7 +25,7 @@ public class StepLambdaTest {
     @Feature("Страница репозитория")
     @Story("Элементы на странице репозитория")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Второй вариант теста. Лямбда шаги через step (name, () -> {})")
+    @DisplayName("Тест: Лямбда шаги через step (name, () -> {})")
     @Link(name = "GitHub", url = "https://github.com")
 
     public void checkingTheIssueNameInTheRepository() {

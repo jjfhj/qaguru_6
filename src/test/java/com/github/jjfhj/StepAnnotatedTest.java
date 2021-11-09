@@ -22,7 +22,7 @@ public class StepAnnotatedTest {
     @Feature("Страница репозитория")
     @Story("Элементы на странице репозитория")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Третий вариант теста. Шаги с аннотацией @Step")
+    @DisplayName("Тест: Шаги с аннотацией @Step")
     @Link(name = "GitHub", url = "https://github.com")
 
     public void checkingTheIssueNameInTheRepository() {

@@ -1,7 +1,9 @@
 package com.github.jjfhj;
 
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -19,6 +21,13 @@ public class StepLambdaTest {
     private static final String REPOSITORY = "jjfhj/qaguru_6";
 
     @Test
+    @Owner("Карина Гордиенко (jjfhj)")
+    @Feature("Страница репозитория")
+    @Story("Элементы на странице репозитория")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Второй вариант теста. Лямбда шаги через step (name, () -> {})")
+    @Link(name = "GitHub", url = "https://github.com")
+
     public void checkingTheIssueNameInTheRepository() {
         step("Открыть главную страницу Github", () -> {
             open("https://github.com");

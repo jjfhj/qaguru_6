@@ -26,9 +26,9 @@ public class StepAnnotatedTest {
     @Link(name = "GitHub", url = "https://github.com")
 
     public void checkingTheIssueNameInTheRepository() {
-        steps.openMainPage();
-        steps.searchForRepository(REPOSITORY);
-        steps.goToRepository(REPOSITORY);
-        steps.findIssuesTitle();
+        steps.openMainPage()
+                .searchForRepository(REPOSITORY)
+                .goToRepository(REPOSITORY)
+                .findIssuesTitle();
     }
 }

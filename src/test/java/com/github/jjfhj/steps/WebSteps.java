@@ -9,22 +9,30 @@ import static org.openqa.selenium.By.linkText;
 
 public class WebSteps {
     @Step("Открыть главную страницу Github")
-    public void openMainPage() {
+    public WebSteps openMainPage() {
         open("https://github.com");
+
+        return this;
     }
 
     @Step("Найти репозиторий {repository}")
-    public void searchForRepository(String repository) {
+    public WebSteps searchForRepository(String repository) {
         $("[name=q]").setValue(repository).submit();
+
+        return this;
     }
 
     @Step("Перейти в найденный репозиторий {repository}")
-    public void goToRepository(String repository) {
+    public WebSteps goToRepository(String repository) {
         $(linkText(repository)).click();
+
+        return this;
     }
 
     @Step("Найти название Issues в репозитории jjfhj/qaguru_6")
-    public void findIssuesTitle() {
+    public WebSteps findIssuesTitle() {
         $("#issues-tab").shouldHave(text("Issues"));
+
+        return this;
     }
 }

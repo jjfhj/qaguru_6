@@ -1,1 +1,1 @@
-# qaguru_6
+# Задание 6. Allure Reports

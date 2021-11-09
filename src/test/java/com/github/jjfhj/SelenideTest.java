@@ -2,8 +2,10 @@ package com.github.jjfhj;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -18,6 +20,13 @@ public class SelenideTest {
     }
 
     @Test
+    @Owner("Карина Гордиенко (jjfhj)")
+    @Feature("Страница репозитория")
+    @Story("Элементы на странице репозитория")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Первый вариант теста. Selenide (с Listener)")
+    @Link(name = "GitHub", url = "https://github.com")
+
     public void checkingTheIssueNameInTheRepository() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 

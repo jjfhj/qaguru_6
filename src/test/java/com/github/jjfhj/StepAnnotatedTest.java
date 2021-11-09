@@ -20,6 +20,6 @@ public class StepAnnotatedTest {
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.goToRepository(REPOSITORY);
-        steps.findIssuesTitle(REPOSITORY);
+        steps.findIssuesTitle();
     }
 }

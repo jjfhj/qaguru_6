@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Поиск элементов на странице репозитория с использованием аннотации @Step")
 public class StepAnnotatedTest {
     @BeforeAll
     static void beforeAll() {

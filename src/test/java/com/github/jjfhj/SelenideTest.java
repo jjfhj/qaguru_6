@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
+@DisplayName("Поиск элементов на странице репозитория с использованием Listener")
 public class SelenideTest {
     @BeforeAll
     static void beforeAll() {

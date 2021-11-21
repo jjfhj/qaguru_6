@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
 public class WebSteps {
+
     @Step("Открыть главную страницу Github")
     public WebSteps openMainPage() {
         open("https://github.com");

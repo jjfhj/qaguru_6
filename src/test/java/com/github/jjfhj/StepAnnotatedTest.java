@@ -8,7 +8,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Поиск элементов на странице репозитория с использованием аннотации @Step")
+
 public class StepAnnotatedTest {
+
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";

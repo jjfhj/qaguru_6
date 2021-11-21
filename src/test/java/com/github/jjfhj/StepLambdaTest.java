@@ -17,7 +17,9 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
 @DisplayName("Поиск элементов на странице репозитория с использованием step (name, () -> {})")
+
 public class StepLambdaTest {
+
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
